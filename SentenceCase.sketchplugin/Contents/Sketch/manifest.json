@@ -1,0 +1,23 @@
+{
+  "author" : "Jesse Bilsten",
+  "commands" : [
+    {
+      "script" : "sentence_case.cocoascript",
+      "handler" : "onRun",
+      "shortcut" : "cmd shift y",
+      "name" : "Sentence Case",
+      "identifier" : "sentencecase"
+    },
+  ],
+  "menu": {
+    "isRoot": true,
+    "items": [
+      "sentencecase",
+    ],
+  },
+  "identifier" : "com.jessebilsten.sketch.sentencecase",
+  "version" : "1.0",
+  "description" : "A plugin to change a selected text layer into Sentence case",
+  "authorEmail" : "jesse@bilsten.net",
+  "name" : "Sentence Case"
+}

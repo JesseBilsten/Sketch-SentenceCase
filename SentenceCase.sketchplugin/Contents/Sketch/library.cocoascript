@@ -1,0 +1,22 @@
+var Library = {
+
+  // Display an error alert
+  "alert": function(msg, title) {
+    title = title || "alert";
+    var app = [NSApplication sharedApplication];
+    [app displayDialog:msg withTitle:title];
+  },
+
+  // Takes string and returns it sentence case
+  "toSentenceCase": function(str) {
+    return str.replace(/(^\w{1}|\.\s*\w{1})/gi, function(txt){return txt.toUpperCase();});
+  },
+
+  // Display an error alert and exit
+  "invalidSelection": function() {
+    alert('Please make sure the layer is a text layer.', 'title');
+    throw(nil); // exit the plugin
+  }
+
+}
+
