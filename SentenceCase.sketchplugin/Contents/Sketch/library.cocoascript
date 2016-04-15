@@ -9,7 +9,7 @@ var Library = {
 
   // Takes string and returns it sentence case
   "toSentenceCase": function(str) {
-    return str.replace(/(^\w{1}|\.\s*\w{1})/gi, function(txt){return txt.toUpperCase();});
+    return str.toLowerCase().replace(/(^\w{1}|\.\s*\w{1})/gi, function(txt){return txt.toUpperCase();});
   },
 
   // Display an error alert and exit
